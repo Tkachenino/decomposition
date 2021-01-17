@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import News from './components/News';
+import Search from './components/Search';
+import Wheather from './components/Apps/Wheather';
+import TvProgramm from './components/Apps/TvProgramm';
+import Popular from './components/Apps/Popular';
+import Map from './components/Apps/Map';
+import Podcast from './components/Apps/Podcast';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <News />
+      <Search />
+      <Wheather />
+      <TvProgramm />
+      <Popular />
+      <Map />
+      <Podcast />
     </div>
   );
 }
